@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: "listado", component: ListadoComponent },
   { path: "categoria", component: CategoriaComponent },
   { path: "blog/:blogId", component: BlogPostComponent },
+   { path: "categoria/:idCategoria", component: CategoriaComponent },
   { path: "new", component: FormularioComponent },
   { path: "admin", component: AdminComponent },
   { path: "**", redirectTo: "/blog" }

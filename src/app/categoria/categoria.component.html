@@ -2,11 +2,13 @@
   <nav class="container">
     <ul class="d-flex flex-wrap justify-content-between">
       <li class="text-dark p-2"> <a class="btn btn-dark" [ngClass]="{'disabled' : !categoriaMostrada}"
-          (click)="filtrarCategoria(false)">Todo</a>
+          (click)="filtrarCategoria(false)" [routerLink]="'/categoria/todos'">Todos</a>
       </li>
-      <li class="text-light p-2" *ngFor="let categoria of arrayCategorias"> <a class="btn btn-dark"
+
+      
+      <li class="text-light p-2" *ngFor="let categoria of arrayCategorias"> <a class="btn btn-dark "
           [ngClass]="{'disabled' : categoriaMostrada === categoria}"
-          (click)="filtrarCategoria(categoria)">{{categoria}}</a>
+          (click)="filtrarCategoria(categoria)" [routerLink]="'/categoria/' + categoria">{{categoria}}</a>
       </li>
     </ul>
   </nav>
@@ -26,6 +28,7 @@
           <p class="blog-text">{{post.texto | textFormat: 75:' '}}
           </p>
           <p>{{post.autor}}</p>
+         
           <button [routerLink]="'/blog/' + post.id" class="btn btn-info">Leer Más</button>
         </div>
       </div>
