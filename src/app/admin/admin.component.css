@@ -1,0 +1,20 @@
+hr{
+  border: 0.125em solid #feda6a;
+  width: 50%;
+}
+
+tbody tr:hover{
+  background-color: #9fa2a5;
+}
+
+button{
+  width: 75px;
+  color: #393f4d;
+}
+
+@media(max-width: 899px){
+  .hide-width{
+    display: none;
+  }
+
+}

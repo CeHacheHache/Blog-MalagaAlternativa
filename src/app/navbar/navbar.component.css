@@ -1,0 +1,21 @@
+img{
+  width: 38px;
+  height: 100%;
+  display: block;
+  
+}
+
+li{
+
+  padding: 0 1em;
+  color: #fe005b;
+  text-decoration: #fe005b;
+
+}
+
+
+
+.bg-dark {
+	background-color: #feda6a ;
+}
+

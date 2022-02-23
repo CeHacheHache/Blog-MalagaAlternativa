@@ -1,0 +1,33 @@
+<div class="container-fluid navBar">
+  <nav class="container">
+    <ul class="d-flex flex-wrap justify-content-between">
+      <li class="text-dark p-2"> <a class="btn btn-dark" [ngClass]="{'disabled' : !categoriaMostrada}"
+          (click)="filtrarCategoria(false)">Todo</a>
+      </li>
+      <li class="text-light p-2" *ngFor="let categoria of arrayCategorias"> <a class="btn btn-dark"
+          [ngClass]="{'disabled' : categoriaMostrada === categoria}"
+          (click)="filtrarCategoria(categoria)">{{categoria}}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="container blogPosts d-flex flex-wrap justify-content-center">
+  <div class="post text-light" *ngFor="let post of arrayMostrado">
+    <div class="background">
+      <div class= "tituloPost"> <h5 class="text-center">{{post.titulo}}</h5> </div>
+      <hr>
+      <div class="row justify-content-between m-0">
+        <div class="imgContainer m-auto col-md-12">
+          <img src="{{post.imagen}}">
+          <!--<p class="mb-0 mt-4">Categoría: {{post.categoria}}</p>
+          <p class="mb-0">{{post.fecha | date: 'fullDate'}}</p>
+         <p class="blog-text">{{post.texto | textFormat: 75:' '}} 
+          </p>
+          <p>~{{post.autor}}</p>-->
+          <button [routerLink]="'/blog/' + post.id" class="btn">Leer Más</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

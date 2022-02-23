@@ -1,0 +1,40 @@
+<div class="container mt-4 mb-4">
+  <div>
+    <h2 class="text-center text-dark  p-2">Editor de Posts</h2>
+    <hr>
+  </div>
+  <div *ngIf="postBorrado" class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+    <h4>{{postBorrado}}</h4>
+  </div>
+  <table class="table table-dark  table-striped">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Titulo</th>
+        <th class="hide-width" scope="col">Texto</th>
+        <th class="hide-width" scope="col">url imagen</th>
+        <th class="hide-width" scope="col">Fecha</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of arrayPosts; let index = index">
+        <th scope="row">{{post.id}}</th>
+        <td data-toggle="tooltip" data-placement="left" title="{{post.titulo}}">
+          {{post.titulo | textFormat: 5}}
+        <td class="hide-width" data-toggle="tooltip" data-placement="left" title="{{post.texto | textFormat: 30}}...">
+          {{post.texto | textFormat: 5}}
+        </td>
+        <td class="hide-width" data-toggle="tooltip" data-placement="left" title="{{post.imagen}}">
+          {{post.imagen | textFormat: 15:''}}
+        </td>
+        <td class="hide-width">{{post.fecha | date: 'dd/MM/yyyy'}}</td>
+        <td>
+          <button (click)="onClickEdit(index)" routerLink="/new"
+            class="btn btn-sm btn-warning font-weight-bold text-uppercase m-1">Editar</button>
+          <button (click)="onClickDelete(index)"
+            class="btn btn-sm btn-danger font-weight-bold text-uppercase m-1">borrar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

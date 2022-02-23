@@ -1,0 +1,16 @@
+h1{
+  color: #393f4d;
+  
+  
+}
+
+h1 span{
+  text-shadow: -1px 0 rgba(254,218,106,1), 0 1px rgb(249, 247, 250), 1px 0 rgba(212,212,220,1), 0 -1px black;
+  
+
+}
+
+div.main-component{
+  min-height: 75vh;
+}
+
