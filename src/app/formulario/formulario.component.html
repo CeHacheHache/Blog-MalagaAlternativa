@@ -39,6 +39,6 @@
       <p class="text-danger" *ngIf="formulario.get('texto').hasError('minlength') && formulario.get('texto').touched">
         El Post debe contener al menos 10 caracteres.</p>
     </div>
-    <input [disabled]="!formulario.valid" class="btn btn-dark" type="submit" value="Subir Post">
+    <input [disabled]="!formulario.valid" class="btn btn-warning" type="submit" value="Subir Post">
   </form>
 </div>

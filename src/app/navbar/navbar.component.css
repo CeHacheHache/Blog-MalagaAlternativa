@@ -1,5 +1,5 @@
 img{
-  width: 38px;
+  width: 50px;
   height: 100%;
   display: block;
   
@@ -19,3 +19,6 @@ li{
 	background-color: #feda6a ;
 }
 
+.navbar{
+  align-items: flex-end;
+}

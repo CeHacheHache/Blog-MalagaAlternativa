@@ -12,6 +12,12 @@ button{
   color: #393f4d;
 }
 
+h3{
+  font-family: 'Sedgwick Ave', 'cursive';
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
 @media(max-width: 899px){
   .hide-width{
     display: none;

@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
       <a class="navbar-brand" (click)="onClick()" [routerLink]=" 'home'" routerLink="active"><img src="assets/images/logoma.png"></a>
       <button class="navbar-toggler" type="button btn-dark" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -10,10 +10,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto text-center">
           <li class="nav-item ">
-            <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'blog'" routerLinkActive="active">BLOG</a>
+            <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'blog'" routerLinkActive="active">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'listado'" routerLinkActive="active">LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'categoria'" routerLinkActive="active">CATEGORY</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-danger" [routerLink]="'new'" routerLinkActive="active">NEW POST</a>

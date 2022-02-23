@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { TextFormatPipe } from './text-format.pipe';
 import { ListadoComponent } from './listado/listado.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ListadoComponent } from './listado/listado.component';
     BlogPostComponent,
     ListadoComponent,
     AdminComponent,
+    CategoriaComponent,
     TextFormatPipe
   ],
   imports: [
