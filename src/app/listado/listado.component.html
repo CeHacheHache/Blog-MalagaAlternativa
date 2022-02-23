@@ -26,7 +26,7 @@
         <div class="col-lg-8 col-md-12">
           <p class="blog-text">{{post.texto | textFormat: 75:' '}}
           </p>
-          <p>~{{post.autor}}</p>
+          <p>{{post.autor}}</p>
           <button [routerLink]="'/blog/' + post.id" class="btn btn-info">Leer Más</button>
         </div>
       </div>
