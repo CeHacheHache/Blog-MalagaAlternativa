@@ -1,30 +1,36 @@
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark mr-auto">
-      <a class="navbar-brand mr-auto" (click)="onClick()" [routerLink]="'home'" routerLink="active"><img src="assets/images/logoma.png"></a>
-      
-      <button class="navbar-toggler mr-auto" type="button btn-dark" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" (click)="onClick()" [routerLink]="'home'" routerLinkActive="active">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="onClick()" [routerLink]="'listado'" routerLinkActive="active">LIST</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="onClick()" [routerLink]="'categoria'" routerLinkActive="active">CATEGORY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="'new'" routerLinkActive="active">NEW POST</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="onClick()" [routerLink]="'admin'" routerLinkActive="active">ADMIN</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-</div>
+  
+ 
+    
+<nav class="navbar navbar-expand-lg navbar-dark mr-auto text-center">
+  <button class="navbar-toggler mr-auto" type="button btn-dark" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <li class="nav-item">
+        <a class="navbar-brand mr-auto" (click)="onClick()" [routerLink]="'home'" routerLink="active"><img
+            src="assets/images/logoma.png"></a>
+      </li>
+      <ul class="navbar-nav mr-auto">
+       
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick()" [routerLink]="'home'" routerLinkActive="active">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick()" [routerLink]="'listado'" routerLinkActive="active">LIST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick()" [routerLink]="'categoria'" routerLinkActive="active">CATEGORY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'new'" routerLinkActive="active">NEW POST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onClick()" [routerLink]="'admin'" routerLinkActive="active">ADMIN</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+

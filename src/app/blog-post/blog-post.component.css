@@ -6,12 +6,10 @@ img{
 }
 
 div.post{
-  border: 0.125em solid #d4d4dc;
   border-radius:  10px;
   padding: 1.5em;
   margin: 1em auto;
   word-wrap: break-word;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #414141;
 }
 

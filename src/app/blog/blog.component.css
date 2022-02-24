@@ -11,12 +11,7 @@ dl, ol, ul {
   
 }
 
-@media(max-width: 740px){
-  ul{
-    max-width: 300px;
-  }
 
-}
 
 img{
   display: block;
@@ -42,6 +37,7 @@ img{
   word-wrap: break-word;
   background-color:white;
   color: black !important;
+  border-radius: 10px;
 
 }
 
@@ -91,3 +87,22 @@ h3{
   text-align: center;
   color: #feda6a;
 }
+
+@media(max-width: 920px){
+  
+  .post{
+    width: 33.3%;
+  }
+
+}
+
+@media(max-width: 740px){
+  ul{
+    max-width: 300px;
+  }
+  .post{
+    width: 100%;
+  }
+
+}
+

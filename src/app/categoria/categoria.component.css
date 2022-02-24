@@ -31,13 +31,11 @@ img{
 }
 
 .post{
-  border: 0.125em solid #d4d4d4;
   padding: 1.5em;
   border-radius: 10px;
   margin: 1em auto;
   width: 100%;
   word-wrap: break-word;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   color: black !important;
 }
@@ -79,6 +77,7 @@ hr{
 
 .btn-dark:visited{
 background-color: #feda6a !important;
+color:#393f4d
 }
 
 h3{
