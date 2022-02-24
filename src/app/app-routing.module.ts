@@ -17,7 +17,7 @@ const routes: Routes = [
    { path: "categoria/:idCategoria", component: CategoriaComponent },
   { path: "new", component: FormularioComponent },
   { path: "admin", component: AdminComponent },
-  { path: "**", redirectTo: "/blog" }
+  { path: "**", redirectTo: "/home" }
 ];
 
 @NgModule({
