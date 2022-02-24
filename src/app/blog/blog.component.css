@@ -4,7 +4,6 @@ div.navBar {
  
 }
 
-
 dl, ol, ul {
   list-style-type: none;
   max-width: 600px;
@@ -31,19 +30,7 @@ img{
   padding: 0em;
 }
 
-/*.post{
-  border: 0.125em solid #d4d4d4;
-  padding: 1.5em;
-  border-radius: 10px;
-  margin: 1em auto;
-  width: 100%;
-  word-wrap: break-word;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color:#d4d4dc;
 
-}
-
-*/
 
   .post{
   
@@ -76,8 +63,6 @@ h5{
 }
 
 
-
-
 hr{
   border: 1px solid #feda6a;
   width: 50%;
@@ -97,4 +82,12 @@ h3{
   margin-left: 20px;
   margin-top: 30px;
   
+}
+
+h3{
+  font-family: 'Sedgwick Ave', 'cursive';
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: #feda6a;
 }

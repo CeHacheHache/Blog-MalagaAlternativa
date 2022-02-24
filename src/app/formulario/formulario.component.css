@@ -10,13 +10,27 @@ textarea{
 
 input.ng-invalid.ng-touched, select.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
   outline: none;
-  border-color: rgb(0, 0, 0);
-  box-shadow: 0 0 10px rgb(170, 221, 255);
+  border-color: rgb(202, 202, 202);
+  box-shadow: 0 0 10px rgb(161, 160, 160);
   background-color: rgb(255, 255, 255);
+  
 }
 
 input.ng-valid.ng-touched,select.ng-valid.ng-touched,textarea.ng-valid.ng-touched{
   outline: none;
   border-color: #ffffff;
   box-shadow: 0 0 10px #c2c2c2;
+  
+}
+
+.text-danger{
+  font-size: 13px;
+}
+
+h3{
+  font-family: 'Sedgwick Ave', 'cursive';
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: #feda6a;
 }

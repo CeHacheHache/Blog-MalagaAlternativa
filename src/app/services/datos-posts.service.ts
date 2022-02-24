@@ -15,9 +15,9 @@ export enum Categoria {
 export class DatosPostsService {
 
   private arrayPosts: Post[];
-  private postEdit: Post; // el post que se va a modificar en la seccion de Admin
-  editMode: Boolean; // modo edit activo o desactivado en formulario
-  arrayCategorias: Categoria[] //variable publica para que los demaás componentes pueda acceder al array de categorias
+  private postEdit: Post; 
+  editMode: Boolean; 
+  arrayCategorias: Categoria[] 
 
 
 
@@ -34,7 +34,9 @@ export class DatosPostsService {
     if (localStorage.getItem('posts')) {
       this.arrayPosts = JSON.parse(localStorage.getItem('posts'))
     } else {
-      // posts de prueba, se deben borrar si se piensa utilizar esta página para monetizar y ser millonario
+
+
+      // posts con información sobre Málaga para cargar la home y hacer pruebas
       this.arrayPosts = [
         {
           titulo: 'Playas Para Perros En Malaga',
@@ -295,7 +297,7 @@ export class DatosPostsService {
     return new Promise((resolve, reject) => {
       this.arrayPosts.push(newPost);
       localStorage.setItem('posts', JSON.stringify(this.arrayPosts))
-      resolve(`El Post ${newPost.titulo} se ha agregado Correctamente!`);
+      resolve(`El Post ${newPost.titulo} Agregado`);
       reject('Ha ocurrido un error');
     });
   }
@@ -304,19 +306,19 @@ export class DatosPostsService {
     return new Promise((resolve, reject) => {
       const filteredList = this.arrayPosts.filter(post => post.categoria === pCategoria);
       resolve(filteredList);
-      reject('Ha ocuriido un error');
+      reject('error');
     })
   }
 
-  //busca un post segun el id
+  //Obtener en base a su ID
   getPostById(pId: number): Promise<Post> {
     return new Promise((resolve, reject) => {
       resolve(this.arrayPosts.find(post => post.id === pId));
-      reject('Ha ocurrido un error');
+      reject('error');
     })
   }
 
-  //añade un id al post nuevo
+  //Suma nuevos Ids
   getNewPostId(): Promise<number> {
     return new Promise((resolve, reject) => {
       const id = (this.arrayPosts.length + 1);
@@ -324,9 +326,8 @@ export class DatosPostsService {
     })
   }
 
-  //------------------seccion ADMIN ---------------------
 
-  //Borrar un post
+  //Modifica la seccion admin borrando 
   deletePost(pIndex: number): Promise<string> {
     return new Promise((resolve, reject) => {
       this.arrayPosts.splice(pIndex, 1);
@@ -338,7 +339,7 @@ export class DatosPostsService {
     });
   }
 
-  // activa el modo editar y selecciona el post a editar
+  // Edición
   activateEditMode(pIndex: number): Promise<string> {
     return new Promise((resolve, reject) => {
       this.postEdit = this.arrayPosts[pIndex];
@@ -348,7 +349,7 @@ export class DatosPostsService {
   }
 
 
-  // se envia la info del post a editar para el formulario
+  // llenado de form
   getPostEdit(): Promise<Post> {
     return new Promise((resolve, reject) => {
       resolve(this.postEdit);
@@ -357,7 +358,7 @@ export class DatosPostsService {
   }
 
 
-  // se modifica el post editado en el array
+  // cambia el post con la nueva edicion
   modifyPost(pPost: Post, pIndex: number): Promise<string> {
     return new Promise((resolve, reject) => {
       this.arrayPosts.splice(pIndex, 1, pPost);

@@ -1,31 +1,26 @@
-url: https://blog-neoland-jml.netlify.app
 
+# Blog Proyect
 
-
-# Blog
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli), CSS & Bootstrap
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
 
-## Code scaffolding
+-------------------------------------------------------------------------------------------------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Resumen / Summary
 
-## Build
+El blog cuenta con la vista home con un grid a tres columnas, un listado con todos los post, un espacio para seleccionar por categorías, un formulario validado donde añadir nuevos post y una pestaña de admin donde se pueden editar y eliminar los post creados.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Usé la web: https://bennettfeely.com/clippy/   para modificar la vista de las imágenes en las cards.
 
-## Running unit tests
+Los banner son fotos de gratifis de la ciudad redimensionas y retocadas con Photoshop.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+The blog has a home view with a three-column grid, a list with all the posts, a space to select by categories, a validated form where you can add new posts and an admin tab where you can edit and delete the created posts.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+I used the web: https://bennettfeely.com/clippy/ to modify the view of the images in the cards.
 
-## Further help
+The banners are free photos of the city resized and retouched with Photoshop.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

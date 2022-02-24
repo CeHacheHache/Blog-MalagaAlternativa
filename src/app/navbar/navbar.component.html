@@ -1,31 +1,30 @@
-<div class="container-fluid">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-
-      <a class="navbar-brand" (click)="onClick()" [routerLink]=" 'home'" routerLink="active"><img src="assets/images/logoma.png"></a>
-      <button class="navbar-toggler" type="button btn-dark" data-toggle="collapse" data-target="#navbarSupportedContent"
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark mr-auto">
+      <a class="navbar-brand mr-auto" (click)="onClick()" [routerLink]="'home'" routerLink="active"><img src="assets/images/logoma.png"></a>
+      
+      <button class="navbar-toggler mr-auto" type="button btn-dark" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto text-center">
-          <li class="nav-item ">
-            <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'blog'" routerLinkActive="active">HOME</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" (click)="onClick()" [routerLink]="'home'" routerLinkActive="active">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'listado'" routerLinkActive="active">LIST</a>
+            <a class="nav-link" (click)="onClick()" [routerLink]="'listado'" routerLinkActive="active">LIST</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'categoria'" routerLinkActive="active">CATEGORY</a>
+            <a class="nav-link" (click)="onClick()" [routerLink]="'categoria'" routerLinkActive="active">CATEGORY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-danger" [routerLink]="'new'" routerLinkActive="active">NEW POST</a>
+            <a class="nav-link" [routerLink]="'new'" routerLinkActive="active">NEW POST</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-danger" (click)="onClick()" [routerLink]="'admin'" routerLinkActive="active">ADMIN</a>
+            <a class="nav-link" (click)="onClick()" [routerLink]="'admin'" routerLinkActive="active">ADMIN</a>
           </li>
         </ul>
       </div>
     </nav>
-  </div>
 </div>

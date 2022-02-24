@@ -2,7 +2,6 @@ img{
   width: 100%;
   height: auto;
   display: block;
-  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -21,26 +20,31 @@ h2{
   margin-top: 28px;
 }
 
-
 hr{
-  border: 0.125em solid #feda6a;
+  border: 0.045em solid #feda6a;
   width: 50%;
+  margin-bottom: 50px;
+  margin-top: 1px;
 }
 
 div.img-container{
   padding: 20px;
-  
- 
 }
 
 p.parrafoTexto:first-child{
-  
   color: #feda6a;
   font-size: 21px;
 }
 
 p.parrafoTexto{
-
-  color: whitesmoke;
+  color: rgb(190, 190, 190);
   font-size: 16px;
+}
+
+h3{
+  font-family: 'Sedgwick Ave', 'cursive';
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: #feda6a;
 }
