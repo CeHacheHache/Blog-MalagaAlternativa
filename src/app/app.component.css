@@ -1,33 +1,40 @@
 h1{
   color: #393f4d;
-  
-  
 }
 
 h1 span{
   text-shadow: -1px 0 rgba(254,218,106,1), 0 1px rgb(249, 247, 250), 1px 0 rgba(212,212,220,1), 0 -1px black;
-  
-
 }
 
 div.main-component{
   min-height: 75vh;
+ 
+}
+
+small{
+  font-size: 9px;
+}
+.social_autor{
+  
+  text-align: center;
+  margin-top: 8px;
+  
+ 
 }
 
 .social_square_icons ul {
      margin: 0;
      padding: 0;
      list-style: none;
-     margin-left: 450px;
-     margin-top: 50px
+     margin-top: 30px;
+     text-align: center;
+    
+     
  }
 
- .social_square_icons ul li:first-child {
-     margin-left: 0px
- }
 
  .social_square_icons ul li a {
-     float: left;
+     float: right;
      line-height: 40px;
      color: #e0e0e0;
      height: 40px;
@@ -35,6 +42,9 @@ div.main-component{
      text-align: center;
      margin-bottom: 40px;
      border: 1px solid #e0e0e0
+     
+     
+     
  }
 
  .gap {
@@ -71,7 +81,6 @@ div.main-component{
  }
 
 
-    
  .g_google:hover {
      color: #fff;
      background: #e55644;
@@ -96,6 +105,4 @@ div.main-component{
      border: 1px solid #ff0084
  }
 
- .textFooter{
-   text-align-last: right;
- }
+ 

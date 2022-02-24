@@ -17,7 +17,6 @@ export class BlogComponent implements OnInit {
 
   constructor(private datosPostsService: DatosPostsService) {
     this.categoriaMostrada = null;
-
     this.arrayCategorias = this.datosPostsService.arrayCategorias;
   }
 
@@ -26,8 +25,6 @@ export class BlogComponent implements OnInit {
     this.datosPostsService.getAllPosts()
       .then(response => {
         this.arrayMostrado = response;
-
-
       })
       .catch(error => console.log(error));
   }

@@ -4,12 +4,12 @@ import { Categoria, DatosPostsService } from '../services/datos-posts.service';
 import { ActivatedRoute } from '@angular/router';
 
 
-
 @Component({
   selector: 'app-categoria',
   templateUrl: './categoria.component.html',
   styleUrls: ['./categoria.component.css']
 })
+  
 export class CategoriaComponent implements OnInit {
 
   arrayMostrado: Post[];
@@ -36,11 +36,7 @@ export class CategoriaComponent implements OnInit {
     this.datosPostsService.getAllPosts()
       .then(response => {
         this.arrayMostrado = response;
-
       });
-    
-      
-
   }
   
 

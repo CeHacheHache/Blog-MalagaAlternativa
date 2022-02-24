@@ -22,7 +22,6 @@ export class AdminComponent implements OnInit {
   }
 
 
-  //se activa el modo edición en DatosPostsService y se envía el índice del post a modificar, en el html se navega al formulario a traves de routerLink con el modoEdicion activo
   async onClickEdit(pIndex) {
     try {
       await this.datosPostsService.activateEditMode(pIndex);
@@ -36,7 +35,6 @@ export class AdminComponent implements OnInit {
       const response = await this.datosPostsService.deletePost(pIndex)
       this.postBorrado = response;
 
-      //setTimeout de 4s para que se borre el mensaje de postBorrado automáticamente
       setTimeout(() => {
         this.postBorrado = null;
       }, 4000);

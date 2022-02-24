@@ -1,22 +1,18 @@
 div.navBar {
   padding: 2em;
   
- 
 }
-
 
 dl, ol, ul {
   list-style-type: none;
   max-width: 600px;
   margin: auto auto 0;
-  
 }
 
 @media(max-width: 740px){
   ul{
     max-width: 300px;
   }
-
 }
 
 img{
@@ -46,20 +42,6 @@ img{
 }
 
 
-
- /* .post{
-  
-  padding: 1em 0.5em 0.5em 0.5em;
-  max-height: 400px;
-  overflow: hidden;
-  margin: 1em;
-  width: 25%;
-  word-wrap: break-word;
-  background-color:white;
-  color: black !important;
-
-}*/
-
 .post button{
   border-radius: 0px;
   background-color: #feda6a;
@@ -79,10 +61,11 @@ h5{
 
 h3{
   font-family: 'Sedgwick Ave', 'cursive';
-  margin-left: 20px;
+  align-items: center;
   margin-top: 30px;
+  text-align: center;
+  color: #feda6a;
 }
-
 
 
 hr{
@@ -99,3 +82,11 @@ hr{
 background-color: #feda6a !important;
 }
 
+
+h3{
+  font-family: 'Sedgwick Ave', 'cursive';
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  color: #feda6a;
+}

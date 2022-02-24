@@ -1,11 +1,10 @@
 <div class="container-fluid navBar">
   <nav class="container">
-    <ul class="d-flex flex-wrap justify-content-between">
+    <ul class="d-flex flex-wrap justify-content-between"> 
       <li class="text-dark p-2"> <a class="btn btn-dark" [ngClass]="{'disabled' : !categoriaMostrada}"
           (click)="filtrarCategoria(false)" [routerLink]="'/categoria/todos'">Todos</a>
       </li>
 
-      
       <li class="text-light p-2" *ngFor="let categoria of arrayCategorias"> <a class="btn btn-dark "
           [ngClass]="{'disabled' : categoriaMostrada === categoria}"
           (click)="filtrarCategoria(categoria)" [routerLink]="'/categoria/' + categoria">{{categoria}}</a>
@@ -13,6 +12,7 @@
     </ul>
   </nav>
 </div>
+
 <div class="container blogPosts d-flex flex-wrap">
   <div class="post text-light" *ngFor="let post of arrayMostrado">
     <div class="background">
@@ -33,6 +33,5 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
